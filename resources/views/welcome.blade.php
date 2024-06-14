@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        @vite('resources/css/app.css')
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -16,7 +16,21 @@
         </style>
     </head>
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
-        <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
+        <h1 class="text-3xl font-bold underline bg-blue-500">
+            Hello world!
+        </h1>
+        <div class="h-full border-2 border-green-200 
+                    border-opacity-60 rounded-lg 
+                    overflow-hidden">
+            <div class="p-6 hover:bg-green-600 
+                        hover:text-white transition 
+                        duration-300 ease-in">
+                <h1 class="text-2xl font-semibold mb-3">
+                    Hover
+                </h1>
+            </div>
+        </div>
+        <!-- <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
             <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src="https://laravel.com/assets/img/welcome/background.svg" />
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
                 <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
@@ -167,6 +181,6 @@
                     </footer>
                 </div>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>
