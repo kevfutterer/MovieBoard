@@ -23,12 +23,20 @@
 
         <div class="flex justify-between mt-16">
             @if ($previous)
-                <a href="/actors/page/{{$previous}}">Previous</a>
+                <a href="/actors/page/{{$previous}}"
+                    class="flex inline-flex items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-2 hover:bg-orange-600 transition ease-in-out duration:150"
+                    >
+                    Previous
+                </a>
             @else
                 <div></div>
             @endif
             @if ($next)
-                <a href="/actors/page/{{$next}}">Next</a>
+                <a href="/actors/page/{{$next}}"
+                    class="flex inline-flex items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-2 hover:bg-orange-600 transition ease-in-out duration:150"
+                    >
+                    Next
+                </a>
             @else
                 <div></div>
             @endif
